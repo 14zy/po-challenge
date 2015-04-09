@@ -56,7 +56,7 @@ function load() {
   // };
   setLang('en');
   
-  window.platform = "actresses/"; //"http://artchallenge.me/painters/"; // "painters/";
+  window.platform = "http://178.62.133.139/actresses/";
   document.cookie = "wins=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 
   window.errorDelay = 4000;
@@ -90,7 +90,7 @@ function getart() {
   var art = document.getElementById("art");
   window.truePainter = window.currentSet[Math.floor((Math.random()*window.currentSet.length))];
 
-  $.getJSON(window.platform + window.truePainter + "/data.json")
+  $.getJSON("actresses/" + window.truePainter + "/data.json")
     .done(function(json) {
       
       // $("#currentSetImg")[0].src="pics/sets/" + window.currentSetName + ".png";
