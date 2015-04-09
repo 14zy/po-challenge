@@ -1,17 +1,17 @@
 {
   "head": {
-    "title": "Art Challenge – A Quiz Game of Famous Painters",
-    "description": "Try to guess 10 painters in a row and beat your friends!"
+    "title": "The Porn Challenge – A Quiz Game of Famous Porn Actresses",
+    "description": "Try to guess 10 actresses in a row and beat your friends!"
   },
   "desc": {
     "what": "What's going on here?",
-    "what-desc": "We offer you to have some fun by playing the art history game!",
+    "what-desc": "We offer you to have some fun by guessing porn actresses names!",
     "how": "How does it work?",
-    "how-desc": "You need to guess the artists who made famous paintings.<br>You win if you manage to guess 10 painters in a row.",
+    "how-desc": "You need to guess the porn actress name.<br>You win if you manage to guess 10 actress in a row.",
     "what-good": "What’s the use of it?",
-    "what-good-desc": "Play in your free time and very soon you’ll be able to tell Claude Monet from Edouard Manet at a glance, let alone Alfred Sisley :)",
+    "what-good-desc": "Play in your free time and very soon you’ll be able to tell Tori Black from Destiny Dixon at a glance, let alone Cherry Crush :)",
     "how-help": "How can I help?",
-    "how-help-desc": "If you like this site, could you be so kind to share it with your friends?",
+    "how-help-desc": "If you like this game, could you be so kind to share it with your friends?",
     "settings": "Options:",
     "lang": "Language",
     "swear": "Swearing",
@@ -31,7 +31,7 @@
     "learn-more": "Learn more",
     "winner": "Congratulations!",
     "winner-desc": "Collection of <strong>__setName__</strong> passed!",
-    "winner-desc-old": "You are really good at Art!<br>10 out of 10 – it is better than 82% of people who has played this game!",
+    "winner-desc-old": "You are really good at Porn!<br>10 out of 10 – it is better than 82% of people who has played this game!",
     "share": "You can share your victory with friends:"
   },
   "badPhrases": {
@@ -71,9 +71,9 @@
     "20": "Wow, such an expert!"
   },
   "shares": {
-    "title": "Ladies and Gentlemen, I am really good at Art!",
-    "description": "Try to guess 10 painters in a row and beat your friends!",
-    "caption": "Art Challenge – A Quiz Game of Famous Painters"
+    "title": "Ladies and Gentlemen, I am really good at Porn!",
+    "description": "Try to guess 10 actresses in a row and beat your friends!",
+    "caption": "The Porn Challenge – A Quiz Game of Famous Porn Actresses"
   },
   "footer": {
     "created": "Created by",

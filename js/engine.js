@@ -335,9 +335,8 @@ function goodPhrase() {
 function winner() {
 
   var winnerDiv = "\
-  <p>"+i18n.t("message.winner-desc", { lng: window.lang, setName: i18n.t("sets." + window.currentSetName, { lng: window.lang }) })+"</p>\
-  <p><a onclick='ShareFB();' href='#'>\
-    <img style='width: 80%; max-height: 350px' src=pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png>\
+  <p><a onclick='#' href='#'>\
+    <img style='width: 80%; max-height: 350px' src=pics/badges/winner-badge-en-shareFB.png>\
   </a></p>\
   <p>" + i18n.t("message.winner-desc-old", { lng: window.lang }) + "</p>\
   <p>" + i18n.t("message.share", { lng: window.lang }) + "</p>" + getShares();
