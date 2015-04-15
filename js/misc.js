@@ -2,7 +2,7 @@
 (function (d, w, c) {
     (w[c] = w[c] || []).push(function() {
         try {
-            w.yaCounter24594722 = new Ya.Metrika({id:24594722,
+            w.yaCounter29731625 = new Ya.Metrika({id:29731625,
                     webvisor:false,
                     clickmap:true,
                     trackLinks:true,
@@ -61,6 +61,6 @@ $('#mc-embedded-subscribe-form').submit(function () {
       text: "Проверьте правильность написания email"
     });
   };
- yaCounter24594722.reachGoal('SUBSCRIBE');
+ yaCounter29731625.reachGoal('SUBSCRIBE');
  return false;
 });
