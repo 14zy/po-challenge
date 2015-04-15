@@ -411,19 +411,19 @@ function getShares() {
 };
 
 function ShareFB() {
-  url = "https://www.facebook.com/dialog/feed?app_id=728840163891628&display=popup&link=http://pornchallenge.ninja/?utm_source=fb-win&redirect_uri=http://pornchallenge.ninja/1.html&picture=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&source=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});      
+  url = "https://www.facebook.com/dialog/feed?app_id=728840163891628&display=popup&link=http://pornchallenge.ninja/?utm_source=fb-win&redirect_uri=http://pornchallenge.ninja/1.html&picture=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&source=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});      
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-FB');
 };
 
 function ShareTW() {
-  url = "http://twitter.com/share?text="+i18n.t("shares.title",{lng: window.lang})+" http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareTW.png &url=http://pornchallenge.ninja/&hashtags=artchallenge";
+  url = "http://twitter.com/share?text="+i18n.t("shares.title",{lng: window.lang})+" http://pornchallenge.ninja/pics/badges/winner-badge-en-shareTW.png&url=http://pornchallenge.ninja/&hashtags=artchallenge";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-TW');
 };
 
 function ShareVK() {
-  url = "http://vk.com/share.php?url=http://pornchallenge.ninja/?utm_source=vk-win&title="+i18n.t("shares.title",{lng: window.lang})+" %23ArtChallenge&description="+i18n.t("shares.description",{lng: window.lang})+"&image=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareVK.png&noparse=true";
+  url = "http://vk.com/share.php?url=http://pornchallenge.ninja/?utm_source=vk-win&title="+i18n.t("shares.title",{lng: window.lang})+" %23PornChallenge&description="+i18n.t("shares.description",{lng: window.lang})+"&image=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareVK.png&noparse=true";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-VK');
 };  
