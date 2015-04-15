@@ -118,7 +118,7 @@ function getart() {
       //   window.bio = json.bio.ru;
       // };
       // if (window.bio == "") {
-      //   window.bio = "Просим не гневаться, но биография этого художника временно отсутствует; ежели Вам известен хороший источник, будьте так любезны, сообщите его нам: <a href='mailto:report@artchallenge.ru'>report@artchallenge.ru</a>.<br><br>We beg your pardon, but temporary this painter's biography is not available; if you know the good source, please contact us: <a href='mailto:report@artchallenge.ru'>report@artchallenge.ru</a>."
+      //   window.bio = "Просим не гневаться, но биография этого художника временно отсутствует; ежели Вам известен хороший источник, будьте так любезны, сообщите его нам: <a href='mailto:report@pornchallenge.ninja'>report@pornchallenge.ninja</a>.<br><br>We beg your pardon, but temporary this painter's biography is not available; if you know the good source, please contact us: <a href='mailto:report@pornchallenge.ninja'>report@pornchallenge.ninja</a>."
       // };
 
       window.truePainterName = i18n.t("painters." + truePainter, { lng: window.lang });
@@ -411,31 +411,31 @@ function getShares() {
 };
 
 function ShareFB() {
-  url = "https://www.facebook.com/dialog/feed?app_id=478531102278887&display=popup&link=http://artchallenge.ru/?utm_source=fb-win&redirect_uri=http://artchallenge.ru/1.html&picture=http://artchallenge.ru/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&source=http://artchallenge.ru/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});      
+  url = "https://www.facebook.com/dialog/feed?app_id=478531102278887&display=popup&link=http://pornchallenge.ninja/?utm_source=fb-win&redirect_uri=http://pornchallenge.ninja/1.html&picture=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&source=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});      
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter24594722.reachGoal('WINNER-SHARE-FB');
 };
 
 function ShareTW() {
-  url = "http://twitter.com/share?text="+i18n.t("shares.title",{lng: window.lang})+" http://artchallenge.ru/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareTW.png &url=http://artchallenge.ru/&hashtags=artchallenge";
+  url = "http://twitter.com/share?text="+i18n.t("shares.title",{lng: window.lang})+" http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareTW.png &url=http://pornchallenge.ninja/&hashtags=artchallenge";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter24594722.reachGoal('WINNER-SHARE-TW');
 };
 
 function ShareVK() {
-  url = "http://vk.com/share.php?url=http://artchallenge.ru/?utm_source=vk-win&title="+i18n.t("shares.title",{lng: window.lang})+" %23ArtChallenge&description="+i18n.t("shares.description",{lng: window.lang})+"&image=http://artchallenge.ru/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareVK.png&noparse=true";
+  url = "http://vk.com/share.php?url=http://pornchallenge.ninja/?utm_source=vk-win&title="+i18n.t("shares.title",{lng: window.lang})+" %23ArtChallenge&description="+i18n.t("shares.description",{lng: window.lang})+"&image=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareVK.png&noparse=true";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter24594722.reachGoal('WINNER-SHARE-VK');
 };  
 
 function ShareOD() {
-  url = "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st.comments=Господа, я отлично разбираюсь в искусстве!&st._surl=http://artchallenge.ru/?utm_source=od-win";
+  url = "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st.comments=Господа, я отлично разбираюсь в искусстве!&st._surl=http://pornchallenge.ninja/?utm_source=od-win";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter24594722.reachGoal('WINNER-SHARE-OD');
 };
 
 function ShareMM() {
-  url = "http://connect.mail.ru/share?url=http://artchallenge.ru/?utm_source=mm-win&title="+i18n.t("shares.title",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang})+"&image_url=http://artchallenge.ru/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareVK.png";
+  url = "http://connect.mail.ru/share?url=http://pornchallenge.ninja/?utm_source=mm-win&title="+i18n.t("shares.title",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang})+"&image_url=http://pornchallenge.ninja/pics/badges/" + window.currentSetName + "/winner-badge-"+window.lang+"-shareVK.png";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter24594722.reachGoal('WINNER-SHARE-MM');
 };
