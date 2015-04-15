@@ -473,23 +473,23 @@ function begood(value){
   if (value == 1) {
     setCookie('begood',1,360);
     window.goodboy = 1;
-    document.getElementById("btnOff").style.color="black";
-    document.getElementById("btnOff").style.fontWeight="bold";
-    document.getElementById("btnOff").style.cursor="default";
-    document.getElementById("btnOn").style.color="#428BCA";
-    document.getElementById("btnOn").style.fontWeight="normal";
-    document.getElementById("btnOn").style.cursor="pointer";
+    // document.getElementById("btnOff").style.color="black";
+    // document.getElementById("btnOff").style.fontWeight="bold";
+    // document.getElementById("btnOff").style.cursor="default";
+    // document.getElementById("btnOn").style.color="#428BCA";
+    // document.getElementById("btnOn").style.fontWeight="normal";
+    // document.getElementById("btnOn").style.cursor="pointer";
   };
   
   if (value == 0) {
     setCookie('begood',0,360);
     window.goodboy = 0;
-    document.getElementById("btnOff").style.color="#428BCA";
-    document.getElementById("btnOff").style.fontWeight="normal";
-    document.getElementById("btnOff").style.cursor="pointer";
-    document.getElementById("btnOn").style.color="black";
-    document.getElementById("btnOn").style.fontWeight="bold";
-    document.getElementById("btnOn").style.cursor="default";
+    // document.getElementById("btnOff").style.color="#428BCA";
+    // document.getElementById("btnOff").style.fontWeight="normal";
+    // document.getElementById("btnOff").style.cursor="pointer";
+    // document.getElementById("btnOn").style.color="black";
+    // document.getElementById("btnOn").style.fontWeight="bold";
+    // document.getElementById("btnOn").style.cursor="default";
   };
 }
 
