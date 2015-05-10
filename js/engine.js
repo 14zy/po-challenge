@@ -141,7 +141,7 @@ function getart() {
       // });
 	  
 	  
-	  $("#watchlink").attr("href", "http://xhamster.com/search.php?q=" + window.truePainterName);
+	  
 	  
 	  
       if (window.truePainterName != "") {
@@ -472,6 +472,9 @@ function refresh(sign,scroll){
       document.getElementById("icon"+i).style.color = "lightgray";
     }; 
   };
+  
+  window.msgThatWas.remove();
+  
 }
 
 function begood(value){
@@ -496,6 +499,51 @@ function begood(value){
     // document.getElementById("btnOn").style.fontWeight="bold";
     // document.getElementById("btnOn").style.cursor="default";
   };
+};
+
+function watchporn() {
+    
+    window.msgThatWas = new PNotify({
+        title: "This is " + window.truePainterName,
+        text: "<a href='#' onTouchStart='reload('bad');' onclick='refresh('bad');'><span class='glyphicon glyphicon-refresh'></span> Refresh Game</a><br>",
+        type: 'note',
+		icon: '',
+        hide: false,
+        animate_speed: "normal",
+        remove: false,
+        addclass: window.pnotify,
+        buttons: {
+          closer: false,
+          sticker: false
+        },
+        history: {
+          history: true,
+          menu: false
+        }
+    });
+	
+	
+    document.getElementById("btn1").onclick = function() { refresh("bad");};
+    document.getElementById("btn2").onclick = function() { refresh("bad");};
+    document.getElementById("btn3").onclick = function() { refresh("bad");};
+    document.getElementById("btn4").onclick = function() { refresh("bad");};
+    document.getElementById("btn1").style.background = "grey";
+    document.getElementById("btn1").style.borderColor = "grey";
+    document.getElementById("btn2").style.background = "grey";
+    document.getElementById("btn2").style.borderColor = "grey";
+    document.getElementById("btn3").style.background = "grey";
+    document.getElementById("btn3").style.borderColor = "grey";
+    document.getElementById("btn4").style.background = "grey";
+    document.getElementById("btn4").style.borderColor = "grey";
+	
+	
+	
+	
+	setTimeout(function() {
+		yaCounter29731625.reachGoal('WATCH-PORN-WITH-HER');
+		window.open("http://xhamster.com/search.php?q=" + window.truePainterName,"_blank");
+	}, 1000)
+    
 }
 
 // function changeSet(value) {
