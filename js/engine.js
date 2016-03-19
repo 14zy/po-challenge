@@ -2,7 +2,7 @@
 function getCookie(cname) {
   var name = cname + "=";
   var ca = document.cookie.split(';');
-  for(var i=0; i<ca.length; i++) 
+  for(var i=0; i<ca.length; i++)
     {
     var c = ca[i].trim();
     if (c.indexOf(name)==0) return c.substring(name.length,c.length);
@@ -28,7 +28,7 @@ function setLang(lang) {
   });
   // document.getElementById("langMain").src="pics/flags/" + lang.toUpperCase() + ".png";
   // document.getElementById(lang).className="lang-active";
-  
+
   // if (lang == "ru") {
   //   $("#subscribe")[0].style.display="block";
   // } else {
@@ -55,7 +55,7 @@ function load() {
   //   setLang(lang);
   // };
   setLang('en');
-  
+
   window.platform = "http://178.62.133.139/actresses/";
   document.cookie = "wins=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
 
@@ -84,7 +84,7 @@ function load() {
 
 load();
 
-function getart() { 
+function getart() {
   currentWins();
 
   var art = document.getElementById("art");
@@ -92,7 +92,7 @@ function getart() {
 
   $.getJSON("actresses/" + window.truePainter + "/data.json")
     .done(function(json) {
-      
+
       // $("#currentSetImg")[0].src="pics/sets/" + window.currentSetName + ".png";
       // $("#currentSetTitle")[0].innerHTML = i18n.t("sets." + window.currentSetName, { lng: window.lang });// Этому тут совсем не место, но больше нигде не работает T_T
 
@@ -139,13 +139,13 @@ function getart() {
       //     window.genre = window.genre + ", " + i18n.t("genre." + entry, { lng: window.lang });
       //   }
       // });
-	  
-	  
-	  
-	  
-	  
+
+
+
+
+
       if (window.truePainterName != "") {
-        putButtons(window.truePainterName);        
+        putButtons(window.truePainterName);
       } else {
         console.log("Error: window.truePainterName is empty, sleep for 1000 and retry");
         art.src = "pics/loading.gif";
@@ -171,12 +171,12 @@ function currentWins() {
 };
 
 function putButtons(painter) {
-  
+
   function randomPainter() {
     var random = "painters." + window.currentSet[Math.floor((Math.random()*window.currentSet.length))];
     return i18n.t(random, { lng: window.lang });
   };
-  
+
   var painters = [painter];
   for (var i=0;i<10;i++) {
     painters.push(randomPainter());
@@ -185,18 +185,18 @@ function putButtons(painter) {
       refresh("bad",false);
     };
   };
-   
+
   //unique
   painters = painters.reverse().filter(function (e, i, painters) {
      return painters.indexOf(e, i+1) === -1;
-  }).reverse(); 
+  }).reverse();
 
   var buttons = [];
   buttons.push(painters[0]);
   buttons.push(painters[1]);
   buttons.push(painters[2]);
   buttons.push(painters[3]);
-  
+
   function shuffle(o){ //v1.0
     for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
@@ -212,11 +212,11 @@ function putButtons(painter) {
 function puticons() {
   for (var i=1; i < window.counter; i++ ) {
     document.getElementById("icon"+i).style.color = "rgb(53,115,45)";
-  } 
+  }
 };
 
 
-function checkAnswer(btn) { 
+function checkAnswer(btn) {
 var answer = document.getElementById(btn).innerHTML;
 
 if (answer == window.truePainterName) {
@@ -226,19 +226,19 @@ if (answer == window.truePainterName) {
   document.getElementById("btn3").onclick = function() { void(0);};
   document.getElementById("btn4").onclick = function() { void(0);};
   document.getElementById(btn).style.background = "blue";
-  document.getElementById(btn).style.borderColor = "blue";      
+  document.getElementById(btn).style.borderColor = "blue";
 
   var wins = parseInt(window.counter);
-        
+
   if (wins == 10) {
     winner();
   }
-  
+
   else {
   wins = 1 + wins;
   setCookie('wins',wins,"session");
   setTimeout(function() {refresh("good");}, 1000)
-  
+
   new PNotify({
       title: goodPhrase(),
       text: i18n.t("message.right-desc", { lng: window.lang, count: parseInt(window.counter) }),
@@ -260,7 +260,7 @@ if (answer == window.truePainterName) {
   });
   yaCounter29731625.reachGoal('WIN');
   };
-  
+
 }
 
 else {
@@ -289,7 +289,7 @@ else {
   });
 
   document.cookie = "wins=; expires=Thu, 01 Jan 1970 00:00:00 GMT";
-        
+
   document.getElementById("btn1").onclick = function() { void(0);};
   document.getElementById("btn2").onclick = function() { void(0);};
   document.getElementById("btn3").onclick = function() { void(0);};
@@ -297,21 +297,21 @@ else {
   document.getElementById(btn).style.background = "red";
   document.getElementById(btn).style.borderColor = "red";
 
-  yaCounter29731625.reachGoal('FAIL');      
+  yaCounter29731625.reachGoal('FAIL');
 };
-  
+
 yaCounter29731625.reachGoal('ANSWER-CLICK');
 };
 
 function learnMore() {
   window.msgWrong.remove();
-  
+
   window.open("http://xhamster.com/search.php?q=" + window.truePainterNameOld,"_blank");
-  
+
   yaCounter29731625.reachGoal('LEARN-MORE'); return true;
-  
+
 };
-    
+
 function setCookie(cname,cvalue,exdays) {
   var d = new Date();
   d.setTime(d.getTime()+(exdays*24*60*60*1000));
@@ -327,14 +327,14 @@ function badPhrase() {
     var phrase = "badPhrases." + Math.floor((Math.random()*12)+1)
     phrase = i18n.t(phrase, { lng: window.lang });
   };
-  return phrase;      
+  return phrase;
 };
 
 
 function goodPhrase() {
     var phrase = "goodPhrases." + Math.floor((Math.random()*20)+1)
     phrase = i18n.t(phrase, { lng: window.lang });
-  return phrase;      
+  return phrase;
 };
 
 function winner() {
@@ -375,7 +375,7 @@ function winner() {
 };
 
 function getShares() {
-  
+
   switch (window.lang)
   {
   case "ru":
@@ -395,7 +395,7 @@ function getShares() {
     </button>\
     </div>";
     break;
-      
+
   default:
     shares_old = "<a onclick='ShareFB();' href='#'><span class='glyphicon glyphicon-share-alt'></span> Facebook </a><br><a onclick='ShareTW();' href='#'> <span class='glyphicon glyphicon-share-alt'></span> Twitter </a><br><a onclick='ShareVK();' href='#'> <span class='glyphicon glyphicon-share-alt'></span> VKontakte </a>";
     shares = "<div style='padding: 15px'>\
@@ -411,12 +411,12 @@ function getShares() {
     </div>";
     break;
   };
-  
+
   return shares;
 };
 
 function ShareFB() {
-  url = "https://www.facebook.com/dialog/feed?app_id=728840163891628&display=popup&link=http://pornchallenge.ninja/?utm_source=fb-win&redirect_uri=http://pornchallenge.ninja/1.html&picture=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&source=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});      
+  url = "https://www.facebook.com/dialog/feed?app_id=728840163891628&display=popup&link=http://pornchallenge.ninja/?utm_source=fb-win&redirect_uri=http://pornchallenge.ninja/1.html&picture=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&source=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareFB.png&name="+i18n.t("shares.title",{lng: window.lang})+"&caption="+i18n.t("shares.caption",{lng: window.lang})+"&description="+i18n.t("shares.description",{lng: window.lang});
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-FB');
 };
@@ -431,7 +431,7 @@ function ShareVK() {
   url = "http://vk.com/share.php?url=http://pornchallenge.ninja/?utm_source=vk-win&title="+i18n.t("shares.title",{lng: window.lang})+" %23PornChallenge&description="+i18n.t("shares.description",{lng: window.lang})+"&image=http://pornchallenge.ninja/pics/badges/winner-badge-en-shareVK.png&noparse=true";
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-VK');
-};  
+};
 
 function ShareOD() {
   url = "http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st.comments=Господа, я отлично разбираюсь в искусстве!&st._surl=http://pornchallenge.ninja/?utm_source=od-win";
@@ -444,7 +444,7 @@ function ShareMM() {
   window.open(url,'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=604,height=401');
   yaCounter29731625.reachGoal('WINNER-SHARE-MM');
 };
-    
+
 function refresh(sign,scroll){
 
   document.getElementById("btn1").onclick = function() { checkAnswer('btn1'); };
@@ -465,16 +465,22 @@ function refresh(sign,scroll){
     $("html, body").animate({ scrollTop: window.scroll }, "slow");
   }
   getart();
-  
+
   if (sign == "bad") {
     window.counter=1;
     for (var i=1; i <= 10; i++ ) {
       document.getElementById("icon"+i).style.color = "lightgray";
-    }; 
+    };
   };
-  
-  window.msgThatWas.remove();
-  
+
+
+  try {
+    window.msgThatWas.remove();
+  } catch (err) {
+    console.log(err)
+  }
+
+
 }
 
 function begood(value){
@@ -488,7 +494,7 @@ function begood(value){
     // document.getElementById("btnOn").style.fontWeight="normal";
     // document.getElementById("btnOn").style.cursor="pointer";
   };
-  
+
   if (value == 0) {
     setCookie('begood',0,360);
     window.goodboy = 0;
@@ -502,7 +508,7 @@ function begood(value){
 };
 
 function watchporn() {
-    
+
     window.msgThatWas = new PNotify({
         title: "This is " + window.truePainterName,
         text: "<a href='#' onTouchStart='reload('bad');' onclick='refresh('bad');'><span class='glyphicon glyphicon-refresh'></span> Refresh Game</a><br>",
@@ -521,8 +527,8 @@ function watchporn() {
           menu: false
         }
     });
-	
-	
+
+
     document.getElementById("btn1").onclick = function() { refresh("bad");};
     document.getElementById("btn2").onclick = function() { refresh("bad");};
     document.getElementById("btn3").onclick = function() { refresh("bad");};
@@ -535,15 +541,15 @@ function watchporn() {
     document.getElementById("btn3").style.borderColor = "grey";
     document.getElementById("btn4").style.background = "grey";
     document.getElementById("btn4").style.borderColor = "grey";
-	
-	
-	
-	
+
+
+
+
 	setTimeout(function() {
 		yaCounter29731625.reachGoal('WATCH-PORN-WITH-HER');
 		window.open("http://xhamster.com/search.php?q=" + window.truePainterName,"_blank");
 	}, 1000)
-    
+
 }
 
 // function changeSet(value) {
@@ -599,4 +605,3 @@ function watchporn() {
 //       location.reload();
 //     }
 //   };
-
